@@ -1,0 +1,16 @@
+{
+  "name": "hello-electron",
+  "version": "1.0.0",
+  "description": "Getting started with Electron Apps",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron main.js",
+    "build": "electron-packager . HelloElectron --platform=darwin --arch=x64 --electron-version=1.6.7 --overwrite && cp eddies.icns HelloElectron-darwin-x64/HelloElectron.app/Contents/Resources/electron.icns"
+  },
+  "author": "SirFizX",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "electron-packager": "^8.7.0"
+  }
+}
